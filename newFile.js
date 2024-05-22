@@ -1,1 +1,0 @@
-lead.addEventListener('clic');
