@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+    gap: 3px;
+    text-align: center;
+    font-family: Outfit;
+    font-weight: normal;
+    font-size: 14px;
+    }
+ul{
+    list-style: none;
+    
+}
+
+aside{
+     display: flex; 
+     justify-content: space-around; 
+     align-items: center; 
+    background-color: rgb(236, 227, 227);
+     
+     /* box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644);  */
+    
+      width: 100%;  
+    z-index: 1;
+    gap: 10em;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+ .navbar ul{
+     display: flex; 
+    gap: 1em;
+   
+}
+.navbar2{
+    background-color:rgb(236, 227, 227);
+        color: white;
+         display: none; 
+        position: absolute;
+        transform: translateX(-30px);
+        transform: translateY(-40px);
+        /* top: 0; */
+        padding: 15px;
+}
+.navbar3{
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .social-media {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        footer {
+    background-color: rgb(48, 2, 2);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+}
+        @media screen and (max-width:1000px) {
+        .navbar{
+            display: none;
+        }
+        .navbar2{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+        aside{
+            gap: 6em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <div class="logo">
+                <img src="/images/dc logo-012.png" alt="LOGO" width="120px">
+            </div>
+            <main>
+                <div class="hamburger">
+                    <img src="/images/pngegg (2).png" alt="" width="40" class="navbar3">
+                </div>
+                <div class="navbar2">
+                    <ul>
+                        <li class="ch">
+                            <img src="/images/cancel.png" alt="" width="25" class="cancel">
+                        </li>
+                        <li class="link">
+                            <a href="Homepage.html">HOMEPAGE</a>
+                        </li>
+                        <li class="link">
+                            <a href="About.html" target="_blank">ABOUT US</a>
+                        </li>
+                        <li class="link">
+                            <a href="/html/Get involved.html">GET INVOLVED</a>
+                        </li>
+                        <li class="link">
+                            <a href="/html/resources.html">RESOURCES</a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+            </main>
+            <div class="navbar">
+                <ul>
+                    <li class="link">
+                        <a href="/html/Homepage.html">HOMEPAGE</a>
+                    </li>
+                    <li class="link">
+                        <a href="About.html" target="_blank">ABOUT US</a>
+                    </li>
+                    <li class="link">
+                        <a href="/html/Get involved.html">GET INVOLVED</a>
+                    </li>
+                    <li class="link">
+                        <a href="/html/resources.html">RESOURCES</a>
+                    </li>
+                    <li class="link">
+                        <a href="#thirdtext">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+    
+        </aside>
+    </header>
+
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourNGO" target="_blank"><img src="/images/pngegg (15).png" alt="Facebook" width="40"></a>
+            <a href="https://twitter.com/yourNGO" target="_blank"><img src="/images/pngegg (14).png" alt="Twitter" width="40"></a>
+            <a href="https://www.instagram.com/yourNGO" target="_blank"><img src="/images/pngegg (13).png"
+                    alt="Instagram" width="40"></a>
+            
+        </div>
+        <h1></h1>
+    </div>
+    <footer>
+        <div class="foot">
+            <p>&copy; 2024 Divexcare. All rights reserved.</p>
+        </div>
+    </footer>
+
+            <script>
+                const hamburger = document.querySelector('.navbar3');
+                    const dropdown = document.querySelector('.navbar2');
+                    const newd = document.querySelector('.cancel');
+
+                    hamburger.addEventListener('click', () => {
+                        console.log('jgdjgfusuie')
+                        dropdown.style.display = "block";
+                    });
+
+                    newd.addEventListener('click', () => {
+                        dropdown.style.display = 'none';
+                    });
+
+            </script>
+</body>
+
+</html>

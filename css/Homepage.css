@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+body{
+    overflow-x: hidden;
+}
+ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+    gap: 3px;
+    text-align: center;
+    font-family: Outfit;
+    font-weight: normal;
+    font-size: 14px;
+    }
+ul{
+    list-style: none;
+    
+}
+
+aside{
+     display: flex; 
+     justify-content: space-around; 
+     align-items: center; 
+    background-color: rgb(236, 227, 227);
+     
+     box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644); 
+    position: fixed;
+      width: 100%;  
+    z-index: 1;
+    gap: 10em;
+    flex-wrap: wrap;
+}
+ .navbar ul{
+     display: flex; 
+    gap: 1em;
+   
+}
+
+.introbar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 10, 1.5)), url(/images/black-man-with-face-mask-getting-his-temperature-measured-by-doctor-during-home-visit.jpg);
+        background-size: cover;
+        height: 120vh;
+        background-position: center;
+        background-repeat: repeat;
+        transition: all 2s ease;
+       z-index: -1;
+}
+.gradient{
+    background-color:rgb(0, 0, 0);
+    height: 120vh;
+    position: relative; 
+    /* transform: translateY(-px); */
+    opacity: 0.8;
+    
+}
+.changer{
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+.introtext{
+    color: white;
+    font-family: arial ;
+    font-size: 70px;
+    font-weight: bolder;
+    /* background-color: black; */
+    min-width: 550px;
+    text-align: center;
+} 
+.cover {
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    /* transform: translate(0%, 0%); */
+    text-align: center;
+    padding-right: 40em;
+    flex-wrap: wrap;
+    /* z-index: 1;
+     position: absolute;  */
+}
+.cover nav p{
+    color: white;
+        font-family: arial;
+        font-size: 20px;
+}
+.cover nav{
+    /* background-color: aqua; */
+    /* padding-right: 800px; */
+    min-width: 35em;
+}
+.cover button{
+    font-family: Eras;
+    padding: 10px;
+    width: 190px;
+    font-size: 25px;
+    font-weight: bolder;
+    background: none;
+    border: 2px solid red;
+    color: aliceblue;
+    border-width: 2px 0px;
+    cursor: pointer;
+}
+.cover button:hover{
+    background: rgb(136, 21, 21);
+    transition: 1s;
+    border: 3px solid white;
+}
+ul li:hover{
+    transform: translateY(-5px);
+    background: rgb(0, 0, 0); 
+        transition: 1s;
+        border: 3px solid rgb(0, 0, 0); 
+}
+ ul .ch:hover {
+     background: none;
+     border: none;
+     transform: none;
+ }
+a:hover{
+    color: white;
+}
+.link{
+    padding: 15px;
+    
+}
+.secondpage{
+    margin: 30px 100px 0px 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     gap: 50px; 
+   
+}
+.secondpage img{
+    border: 2px solid none;
+    border-radius: 15px;
+}
+
+.secondpage .secondtext h2{
+    /* background-color: blue; */
+    color: rgb(92, 3, 3);
+    
+}
+.secondtext{
+    /* background-color: blue; */
+    /* width: 200px; */
+    padding: 100px 200px 100px 00px;
+    line-height: 45px;
+    text-align: center;
+    font-family:Bahnschrift;
+    font-size: 25px;
+}
+footer {
+    background-color: rgb(48, 2, 2);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.socialmedia{
+    padding-top: 15px;
+    word-spacing: 10px;
+}
+#thirdtext{
+    padding-top: 15px;
+    
+}
+.worksinter{
+    display: flex;
+    gap: 7em;
+    justify-content: center;
+    transform: translateY(-50px);
+    align-items: center;
+    flex-wrap: wrap;
+}
+.works{
+    background-color: rgb(128, 37, 37);
+    text-align:center;
+    width: 300px;
+    box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 250px;
+}
+.works:hover{
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+.works h3{
+    font-family: Segoe UI Emoji;
+    color: rgb(228, 225, 54);
+    font-weight: bolder;
+}
+.works p{
+    text-align:center;
+    padding: 0px 15px 0px 15px;
+    font-size: 13px;
+    color: white;
+   
+}
+.works img{
+    /* margin-top: 15px; */
+    padding-top: 5px;
+}
+
+.works button{
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(163, 6, 40);
+    border: none;
+    text-align: center;
+    width: 60px;
+    margin-top: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+        /* border-radius: 5px; */
+        box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.644);
+}
+.works button:hover{
+    background-color:rgb(91, 6, 25) ;
+}
+.changeimage{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.8s ease;
+}
+#change{
+   position: relative;
+}
+.changeimage:hover{
+    opacity: 1;
+}
+.slider {
+    background-color: blueviolet;
+}
+.secondpage{
+    width: 100%;
+    
+}
+.navbar2{
+    background-color:rgb(236, 227, 227);
+        color: white;
+         display: none; 
+        position: absolute;
+        transform: translateX(-30px);
+        transform: translateY(-40px);
+        /* top: 0; */
+        padding: 15px;
+}
+.navbar3{
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+/* responsiveness */
+@media screen and (min-width:1090px) {
+   main{
+    display: none;
+   }
+}
+@media screen and (max-width:1089px) {
+        .navbar{
+            display: none;
+        }
+        .navbar2{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+        aside{
+            gap: 6em;
+        }
+        .secondpage{
+            flex-wrap: wrap;
+            /* background-color: blue; */
+            margin: 0;
+        }
+        .secondpage .secondtext img{
+            width: 60px;
+        }
+        .secondpage img{
+            width: 400px;
+        }
+        .cover{
+            padding-right: 0;
+        }
+}
+
+@media screen and (max-width:1082px){
+    .secondtext {
+            /* width: 200px; */
+            padding: 10px 100px 100px 100px;
+    }
+    .secondpage{
+        /* gap: 10px; */
+    }
+    .worksinter{
+        
+    }
+}
+@media screen and (max-width:600px){
+    .introtext{
+        font-size: 50px;
+        margin-top: 45px ;
+    }
+    
+    .cover nav p{
+        font-size: 15px;
+}
+}
+@media screen and (max-width:500px){
+.cover{
+    /* text-align: left; */
+    
+   
+}
+.introtext{
+    /* background-color: green; */
+    min-width: 0;
+    
+   padding-right: 100px;
+}
+.cover nav{
+     text-align: left;
+     padding-left: 50px;
+}
+.cover div{
+    padding-right: 100px;
+}
+}
+

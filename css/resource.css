@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+ul li a {
+    text-decoration: none;
+    color: brown; 
+    font-weight: bolder;
+    /* gap: 3px; */
+    text-align: center;
+    font-family: Outfit;
+    font-weight: normal;
+    font-size: 14px;
+    
+}
+
+ul {
+    list-style: none; 
+}
+
+aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(236, 227, 227);
+    padding-top: 15px;
+    box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    flex-wrap: wrap; 
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1em;
+
+}
+ .navbar2 {
+    
+    color: white;
+    display: none;
+    position: absolute;
+     top: 2px; 
+     right: 110px;
+     padding: 5px;
+    
+    
+} 
+.navbar2 ul li a{
+    font-size: 12px;
+    color: rgb(131, 3, 3);
+}
+.navbar2 ul{
+    background-color: rgb(236, 227, 227);
+    line-height: 1;
+    padding-left: 10px;
+    text-align: start;
+}
+.navbar2 ul li a:hover{
+    background-color: #380202;
+    color: white;
+    transition: 1s;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+}
+
+.navbar3 {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+.head {
+    background-color: #380202;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #490303;
+    padding: 20px;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% 20% 20% ;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 85px;
+    margin-top: 10px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#medical-libraries:hover, #medical-journals:hover, #medical-databases:hover,#medical-organizations:hover, #medical-research-centers:hover, #medical-education-resources:hover, #medical-news-and-updates:hover {
+    background-color: brown;
+    
+    transform: translateY(30px);
+    transition: 1s;
+
+}
+#medical-libraries:hover h2,
+#medical-journals:hover h2,
+#medical-databases:hover h2,
+#medical-organizations:hover h2,
+#medical-research-centers:hover h2,
+#medical-education-resources:hover h2,
+#medical-news-and-updates:hover h2{
+    color: white;
+}
+#medical-libraries:hover ul li a,
+#medical-journals:hover ul li a,
+#medical-databases:hover ul li a,
+#medical-organizations:hover ul li a,
+#medical-research-centers:hover ul li a,
+#medical-education-resources:hover ul li a,
+#medical-news-and-updates:hover ul li a {
+    color: white;
+}
+h1 {
+    color: #ffffff;
+    margin-top: 0;
+}
+h2{
+    color: #333;
+}
+h3{
+/* text-align: left; */
+font-size: 10px;
+color: rgb(7, 5, 5);
+background-color: rgb(216, 216, 216);
+display: inline;
+margin-left: 10px;
+padding: 5px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+h3:hover{
+    color: #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+footer {
+    background-color: rgb(48, 2, 2);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    margin-top: 10px;
+}
+/* responsiveness */
+
+/* @media screen and (max-width:989px){
+    .navbar {
+            display: none;
+        }
+    
+        .navbar2 {
+            display: none;
+        }
+    
+        .hamburger {
+            display: block;
+        }
+        aside{
+            gap
+        }
+} */
+@media screen and (max-width:972px){
+        main{
+            grid-template-columns: 25% 25% 25% ;
+        }
+}
+@media screen and (max-width:860px){
+    .navbar {
+            display: none;
+        }
+    
+        .navbar2 {
+            display: none;
+        }
+    
+        .hamburger {
+            display: block;
+        }
+    
+        aside {
+            gap
+        }
+}
+@media screen and (max-width:740px){
+        main {
+                grid-template-columns: 38% 38% ;
+            }
+}
+
+@media screen and (max-width:674px){
+    .head nav {
+    display: none;
+}
+}
+@media screen and (max-width:596px){
+    .navbar2{
+        right: 70px;
+}

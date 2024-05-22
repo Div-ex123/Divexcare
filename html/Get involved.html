@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET INVOLVED</title>
+    <link rel="stylesheet" href="/css/Get involved.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/images/dc logo-012.png" alt="LOGO" width="110px">
+            </div>
+            <div class="twobar">
+                <div class="navbar">
+                    <img src="/images/pngegg (2).png" alt="" width="40" class="navbar3">
+    
+                </div>
+                <div class="navbar2">
+                    <ul>
+                        <li>
+                            <img src="/images/cancel.png" alt="" width="25" class="cancel">
+                        </li>
+                        <li class="link">
+                            <a href="Homepage.html">HOMEPAGE</a>
+                        </li>
+                        <li class="link">
+                            <a href="About.html" target="_blank">ABOUT US</a>
+                        </li>
+                        <li class="link">
+                            <a href="/html/Get involved.html">GET INVOLVED</a>
+                        </li>
+                        <li class="link">
+                            <a href="/html/resources.html">RESOURCES</a>
+                        </li>
+                        <li class="link">
+                            <a href="/html/contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p class="bar"></p>  -->
+            <div class="navbar4">
+                <ul>
+                    <li class="link">
+                        <a href="#">HOMEPAGE</a>
+                    </li>
+                    <li class="link">
+                        <a href="About.html" target="_blank">ABOUT US</a>
+                    </li>
+                    <li class="link">
+                        <a href="/html/Get involved.html">GET INVOLVED</a>
+                    </li>
+                    <li class="link">
+                        <a href="/html/resources.html">RESOURCES</a>
+                    </li>
+                    <li class="link">
+                        <a href="/html/contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    </header>
+    <section class="introbar">
+        <div class="cover">
+            <h1 class="introtext">
+                MAKE SOMEONE'S LIFE
+                <br>
+                <span class="bound">BY GIVING UP YOURS</span>
+            </h1>
+            <nav class="help">
+                <p>
+                    -Helping around the World
+                </p>
+            </nav>
+        </div>
+                                <!-- FORM -->
+    </section>
+    <div class="container">
+        <h1>Donate to SAVE LIFE</h1>
+        <form id="donationForm">
+            <div class="firstgroup">
+            <div class="input-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            </div>
+            <div class="firstgroup">
+            <div class="input-group">
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency" required>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            </div>
+            <button type="submit" class="btn">Donate Now</button>
+        </form>
+    </div>
+    <footer>
+        <div class="end">
+            <p>&copy; 2024 Divexcare. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+
+        const hamburger = document.querySelector('.navbar3');
+            const dropdown = document.querySelector('.navbar2');
+            const newd = document.querySelector('.cancel');
+
+            hamburger.addEventListener('click', () => {
+                console.log('jgdjgfusuie')
+                dropdown.style.display = "block";
+            });
+
+            newd.addEventListener('click', () => {
+                dropdown.style.display = 'none';
+            });
+
+        document.getElementById('donationForm').addEventListener('submit', function (event) {
+            const fullName = document.getElementById('fullName').value;
+            console.log(fullName);
+            event.preventDefault();
+            // donation process (replace with actual donation handling)
+            alert(`Thank you for your donation! ${fullName} 
+An Email will be sent to you shortly.`);
+            // Clear the form after submission
+            document.getElementById('donationForm').reset();
+        });
+
+
+        const nav = document.querySelector('nav');
+        const space = document.querySelector('.bound');
+
+        const initial = space.getBoundingClientRect();
+
+        window.addEventListener('scroll',function (e) {
+            console.log(e)
+            if (window.scrollY > initial.top) {
+                nav.classList.add('sticky');
+            } else {
+            nav.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>

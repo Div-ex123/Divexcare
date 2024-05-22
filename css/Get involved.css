@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background-color: rgb(48, 2, 2); */
+    overflow-x: hidden;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    gap: 3px;
+    text-align: center;
+    font-family: Outfit;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 2;
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(236, 227, 227);
+    /* height: 70px;  */
+    /* box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644);  */
+
+    width: 100%;
+    position: relative;
+    /* z-index: 1;  */
+}
+.navbar {
+    display: none;
+}
+
+.navbar img {
+    cursor: pointer;
+
+}
+
+.navbar4 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.navbar4 ul li a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+    gap: 3px;
+    text-align: center;
+    font-family: Outfit;
+    font-weight: normal;
+    font-size: 14px;
+}
+.twobar {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+
+}
+
+.navbar2 {
+    /* transform: translate(40px,20px); */
+    background-color: rgb(236, 227, 227);
+    color: white;
+    display: none;
+    position: absolute;
+    transform: translateX(-30px);
+    transform: translateY(45px);
+    /* top: 0; */
+    padding: 15px;
+}
+
+.navbar2 ul li a:hover {
+    background-color: rgb(78, 14, 14);
+    padding: 7px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.introbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 10, 1.5)), url(/images/african-american-doctor-with-face-mask-examining-boy-s-throat-home-visit.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+.introtext {
+    color: white;
+    font-family: arial;
+    font-size: 50px;
+    font-weight: bolder;
+    /* background-color: black;  */
+    /* max-width: 550px; */
+    text-align: center;
+    
+}
+.introtext span{
+    color: rgb(173, 24, 24);
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+     gap: 10px; 
+     /* transform: translateX(50%); */
+    text-align: center;
+     /* background-color: rgb(15, 0, 58);  */
+    /* width: 35em; */
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+.help{
+    background: none;
+}
+.cover nav p {
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.cover nav {
+     /* background-color: rgb(37, 182, 18);  */
+    /* padding-right: 800px; */
+     
+}
+.cover button {
+    font-family: Eras;
+    padding: 10px;
+    width: 190px;
+    font-size: 25px;
+    font-weight: bolder;
+    background: none;
+    border: 2px solid red;
+    color: aliceblue;
+    border-width: 2px 0px;
+    cursor: pointer;
+}
+
+/* FORM */
+.container
+
+h1 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-group input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-group select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+        outline: none;
+    }
+
+
+.btn {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 130px;
+    }
+
+
+.btn:hover {
+    background-color: #006bb3;
+}
+.container{
+    font-family: Arial, sans-serif;
+        
+         
+        background-color: #630713;
+        display: flex;
+        align-items: center;
+        gap: 7em;
+        flex-wrap: wrap;
+        padding: 15px ;
+}
+.container h1{
+    color: whitesmoke;
+    padding-left: 100px;
+}
+.firstgroup{
+    display: flex;
+    gap: 9em;
+}
+ .Back {
+    /* padding: 0px 2px 0px 2px; */
+    background-color: rgb(163, 6, 40);
+    border: none;
+    text-align: center;
+    width: 30px;
+    /* margin-top: 15px; */
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 5px; */
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.644);
+}
+
+.works button:hover {
+    background-color: rgb(91, 6, 25);
+}
+footer {
+    background-color: rgb(48, 2, 2);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sticky{
+    position: fixed;
+    z-index: 1;
+}
+
+/* responsiveness */
+
+@media screen and (max-width:1089px){
+.container {
+     
+         max-width: 600px;   
+        margin: 50px auto;
+        background-color: #630713;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.644);
+    }
+    
+    body{
+        background-color: #630713;
+    }
+
+}
+
+@media screen and (max-width:870px){
+.navbar4 {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+}
+
+ @media screen and (max-width:670px){
+.firstgroup {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+ }
