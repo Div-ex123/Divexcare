@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 ul li a {
     text-decoration: none;
@@ -27,7 +27,7 @@ aside {
     background-color: rgb(236, 227, 227);
     padding-top: 15px;
     box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644);
-    /* position: fixed; */
+    position: relative; 
     width: 100%;
     z-index: 1;
     flex-wrap: wrap; 
@@ -43,12 +43,17 @@ aside {
     color: white;
     display: none;
     position: absolute;
-     top: 2px; 
-     right: 110px;
-     padding: 5px;
+     top: 10px; 
+     right: 70px;
+     
+     padding: 1px;
     
     
 } 
+.link {
+    padding: 2px;
+
+}
 .navbar2 ul li a{
     font-size: 12px;
     color: rgb(131, 3, 3);
@@ -223,20 +228,12 @@ footer {
         }
 }
 @media screen and (max-width:860px){
-    .navbar {
+    /* 
+    
+         */
+    
+        #about{
             display: none;
-        }
-    
-        .navbar2 {
-            display: none;
-        }
-    
-        .hamburger {
-            display: block;
-        }
-    
-        aside {
-            gap
         }
 }
 @media screen and (max-width:740px){
@@ -250,7 +247,22 @@ footer {
     display: none;
 }
 }
-@media screen and (max-width:596px){
+@media screen and (max-width:660px) {
+.navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .navbar2 ul li a{
+       font-size: 10px;
+       padding: 0px;
+    }
+    
+}
+@media screen and (max-width:500px){
     .navbar2{
-        right: 70px;
+        right: 27px;
+} 
 }
