@@ -1,10 +1,26 @@
 *{
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    box-sizing: border-box; 
 }
-body{
-    overflow-x: hidden;
+
+body {
+    width: 100%;
 }
+
+ .secondpage {
+      /* margin-inline: 9px;    */
+      /* background-color: blueviolet; */
+}
+
+header{
+background-color: rgb(236, 227, 227);
+position: fixed;
+z-index: 1;
+box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644);
+    width: 100%;
+}
+
 ul li a{
     text-decoration: none;
     color: brown;
@@ -20,23 +36,30 @@ ul{
     
 }
 
-aside{
+.header-container{
      display: flex; 
-     justify-content: space-around; 
+         justify-content: space-around;     
      align-items: center; 
-    background-color: rgb(236, 227, 227);
+    
      
-     box-shadow: -0.5px 4px 30px 2px rgba(0, 0, 0, 0.644); 
-    position: fixed;
-      width: 100%;  
-    z-index: 1;
-    gap: 10em;
+     
+    /* gap: 10em; */
     flex-wrap: wrap;
 }
- .navbar ul{
+ .desktop-nav ul{
      display: flex; 
     gap: 1em;
    
+}
+.navbar2{
+    background-color: rgb(236, 227, 227);
+        color: white;
+        display: none;
+        position: absolute;
+        transform: translateX(-30px);
+        transform: translateY(-40px);
+        /* top: 0; */
+        padding: 15px;
 }
 
 .introbar{
@@ -47,11 +70,12 @@ aside{
         background-repeat: repeat;
         transition: all 2s ease;
        z-index: -1;
+       width: 100%;
 }
 .gradient{
     background-color:rgb(0, 0, 0);
     height: 120vh;
-    position: relative; 
+   
     /* transform: translateY(-px); */
     opacity: 0.8;
     
@@ -64,11 +88,12 @@ aside{
 .introtext{
     color: white;
     font-family: arial ;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bolder;
     /* background-color: black; */
-    min-width: 550px;
+    /* min-width: 550px; */
     text-align: center;
+    
 } 
 .cover {
     display: flex;
@@ -76,7 +101,7 @@ aside{
     gap:10px ;
     /* transform: translate(0%, 0%); */
     text-align: center;
-    padding-right: 40em;
+    /* padding-right: 40em; */
     flex-wrap: wrap;
     /* z-index: 1;
      position: absolute;  */
@@ -86,11 +111,7 @@ aside{
         font-family: arial;
         font-size: 20px;
 }
-.cover nav{
-    /* background-color: aqua; */
-    /* padding-right: 800px; */
-    min-width: 35em;
-}
+
 .cover button{
     font-family: Eras;
     padding: 10px;
@@ -127,12 +148,12 @@ a:hover{
     
 }
 .secondpage{
-    margin: 30px 100px 0px 100px; 
+      margin: 60px 0px 50px 0px;   
     display: flex;
     justify-content: center;
     align-items: center;
-     gap: 50px; 
-   
+     gap: 60px; 
+   padding-left: 50px;
 }
 .secondpage img{
     border: 2px solid none;
@@ -142,16 +163,19 @@ a:hover{
 .secondpage .secondtext h2{
     /* background-color: blue; */
     color: rgb(92, 3, 3);
+    /* padding-right: 200px;
+    padding-left: 200px; */
     
 }
 .secondtext{
-    /* background-color: blue; */
-    /* width: 200px; */
-    padding: 100px 200px 100px 00px;
+    /* background-color: blue;  */
+     /* width: 200px;   */
+    /* padding: 100px 200px 100px 00px;  */
     line-height: 45px;
     text-align: center;
     font-family:Bahnschrift;
-    font-size: 25px;
+    font-size: 20px;
+    /* margin-right: 100px; */
 }
 footer {
     background-color: rgb(48, 2, 2);
@@ -205,6 +229,8 @@ footer {
     padding-top: 5px;
 }
 
+
+
 .works button{
     padding: 0px 10px 0px 10px;
     background-color: rgb(163, 6, 40);
@@ -241,17 +267,16 @@ footer {
     width: 100%;
     
 }
-.navbar2{
+.desktop-nav2{
     background-color:rgb(236, 227, 227);
         color: white;
-         display: none; 
-        position: absolute;
+        
         transform: translateX(-30px);
         transform: translateY(-40px);
         /* top: 0; */
         padding: 15px;
 }
-.navbar3{
+.desktop-nav3{
     cursor: pointer;
 }
 .hamburger{
@@ -259,20 +284,22 @@ footer {
 }
 /* responsiveness */
 @media screen and (min-width:1090px) {
-   main{
+.mobile-nav{
     display: none;
    }
+   
 }
-@media screen and (max-width:1089px) {
-        .navbar{
+@media screen and (max-width:1090px) {
+    
+        /* .desktop-nav{
             display: none;
-        }
-        .navbar2{
+        } */
+        /* .desktop-nav2{
             display: none;
-        }
-        .hamburger{
+        } */
+        /* .hamburger{
             display: block;
-        }
+        } */
         aside{
             gap: 6em;
         }
@@ -282,7 +309,7 @@ footer {
             margin: 0;
         }
         .secondpage .secondtext img{
-            width: 60px;
+            width: 50px;
         }
         .secondpage img{
             width: 400px;
@@ -293,6 +320,9 @@ footer {
 }
 
 @media screen and (max-width:1082px){
+    .desktop-nav2 {
+            position: absolute;
+        }
     .secondtext {
             /* width: 200px; */
             padding: 10px 100px 100px 100px;
@@ -304,7 +334,21 @@ footer {
         
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:780px) {
+    #resource{
+        display: none;
+    }
+}
+@media screen and (max-width:680px){
+    .hamburger{
+        display: block;
+    }
+    .desktop-nav {
+            display: none;
+        }
+    .desktop-nav2 {
+            position: absolute;
+        }
     .introtext{
         font-size: 50px;
         margin-top: 45px ;
@@ -315,16 +359,18 @@ footer {
 }
 }
 @media screen and (max-width:500px){
-.cover{
-    /* text-align: left; */
-    
-   
-}
+    .secondpage{
+        padding-left: 0px;
+    }
+
+    .desktop-nav2 {
+            position: absolute;
+        }
 .introtext{
     /* background-color: green; */
     min-width: 0;
     
-   padding-right: 100px;
+   padding-right: 50px;
 }
 .cover nav{
      text-align: left;
