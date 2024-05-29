@@ -78,7 +78,10 @@ nav {
     transform: translateX(-30px);
     transform: translateY(75px);
     /* top: 0; */
-    padding: 15px;
+    padding: 0px;
+}
+.navbar2 ul li a {
+    color: brown;
 }
 
 .navbar2 ul li a:hover {
@@ -86,6 +89,7 @@ nav {
     padding: 7px;
     border-radius: 3px;
     transition: 0.5s;
+    color: #fff;
 }
 .introbar {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 10, 1.5)), url(/images/african-american-doctor-with-face-mask-examining-boy-s-throat-home-visit.jpg);
@@ -274,13 +278,30 @@ footer {
 }
 
 @media screen and (max-width:870px){
-.navbar4 {
+/* .navbar4 {
         display: none;
     }
 
     .navbar {
         display: block;
+    } */
+    #About{
+        display: none;
     }
+}
+
+@media screen and (max-width:730px) {
+    .navbar4 {
+            display: none;
+        }
+    
+        .navbar {
+            display: block;
+        }
+                .link {
+                    padding: 2px;
+        
+                }
 }
 
  @media screen and (max-width:670px){
@@ -292,3 +313,11 @@ footer {
  .navbar2{
     transform: translateY(90px);
  }
+  @media screen and (max-width:460px) {
+    .navbar2{
+        transform: translateY(90px)
+    }
+    .navbar2 ul li a{
+        font-size: 12px;
+    }
+  }
