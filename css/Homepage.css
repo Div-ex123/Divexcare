@@ -382,5 +382,11 @@ footer {
     #change img{
     width: 300px;
 }
+    .navbar2{
+    padding: 0px;
+}
+.link {
+    padding: 10px;
+}
 }
 
