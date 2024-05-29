@@ -379,5 +379,8 @@ footer {
 .cover div{
     padding-right: 100px;
 }
+    #change img{
+    width: 300px;
+}
 }
 
