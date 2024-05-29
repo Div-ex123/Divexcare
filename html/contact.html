@@ -37,7 +37,7 @@ aside{
     
       width: 100%;  
     z-index: 1;
-    gap: 10em;
+    /* gap: 10em; */
     flex-wrap: wrap;
     padding-top: 15px;
 }
@@ -51,10 +51,14 @@ aside{
         color: white;
          display: none; 
         position: absolute;
-        transform: translateX(-30px);
-        transform: translateY(-40px);
+        transform: translateX(-10px);
+        transform: translateY(-50px);
         /* top: 0; */
-        padding: 15px;
+        padding: 0px;
+}
+.link{
+    padding: 10px;
+    
 }
 .navbar3{
     cursor: pointer;
@@ -122,24 +126,51 @@ aside{
     background-color: rgb(48, 2, 2);
     color: #fff;
     text-align: center;
-    padding: 20px;
+     padding: 20px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 15px;
 }
-        @media screen and (max-width:1000px) {
-        .navbar{
+        @media screen and (max-width:890px) {
+        /* .navbar{
             display: none;
         }
         .navbar2{
             display: none;
-        }
-        .hamburger{
+        } */
+        /* .hamburger{
             display: block;
-        }
-        aside{
+        } */
+        /* aside{
             gap: 6em;
+        } */
+         #resource{
+        display: none;
+    } 
+    }
+     @media screen and (max-width:730px) {
+        .hamburger{
+        display: block;
+    }
+    .navbar{
+            display: none;
+        }
+        .navbar2 ul{
+            padding-left: 0px;
         }
     }
+    @media screen and (max-width:400px) {
+    .navbar2{
+        transform: translateX(-11px); 
+        transform: translateY(-56px); 
+    }
+    }
+    @media screen and (max-width:375px) {
+    .navbar2{
+        transform: translateX(-11px); 
+        transform: translateY(-60px); 
+    }
+    }
+
     </style>
 </head>
 
@@ -186,11 +217,11 @@ aside{
                     <li class="link">
                         <a href="/html/Get involved.html">GET INVOLVED</a>
                     </li>
-                    <li class="link">
+                    <li class="link" id="resource">
                         <a href="/html/resources.html">RESOURCES</a>
                     </li>
                     <li class="link">
-                        <a href="#thirdtext">CONTACT US</a>
+                        <a href="/html/contact.html">CONTACT US</a>
                     </li>
                 </ul>
             </div>
