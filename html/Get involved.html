@@ -46,7 +46,7 @@
                     <li class="link">
                         <a href="/html/Homepage.html">HOMEPAGE</a>
                     </li>
-                    <li class="link">
+                    <li class="link" id="About">
                         <a href="/html/About.html" target="_blank">ABOUT US</a>
                     </li>
                     <li class="link">
@@ -102,10 +102,11 @@
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="GBP">GBP</option>
+                    <option value="GBP">NGN</option>
                 </select>
             </div>
             </div>
-            <button type="submit" class="btn">Donate Now</button>
+            <button type="submit" class="btn" onclick="payWithPaystack()">Donate Now</button>
         </form>
     </div>
     <footer>
@@ -113,8 +114,38 @@
             <p>&copy; 2024 Divexcare. All rights reserved.</p>
         </div>
     </footer>
-    
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <!-- <script src="/js/getinvoved.js"></script>  -->
     <script>
+    const paymentForm = document.getElementById('donationForm');
+        paymentForm.addEventListener("submit", payWithPaystack, false);
+        function payWithPaystack(e) {
+            e.preventDefault();
+
+            let handler = PaystackPop.setup({
+                key: 'pk_test_e6bb8817e320a893b6f3efb55564d16498536766', // Replace with your public key
+                email: document.getElementById("email").value,
+                amount: document.getElementById("amount").value * 100,
+                // currency: 'GHS',
+                ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+                // label: "Optional string that replaces customer email"
+                onClose: function () {
+                    alert('Window closed.');
+
+                },
+                callback: function (response) {
+                    let message = 'Payment complete! Reference: ' + response.reference;
+                    alert(message);
+                }
+
+            }
+            );
+
+            handler.openIframe();
+
+        }
+        console.log(payWithPaystack);
+
 
         const hamburger = document.querySelector('.navbar3');
             const dropdown = document.querySelector('.navbar2');
@@ -129,16 +160,16 @@
                 dropdown.style.display = 'none';
             });
 
-        document.getElementById('donationForm').addEventListener('submit', function (event) {
-            const fullName = document.getElementById('fullName').value;
-            console.log(fullName);
-            event.preventDefault();
-            // donation process (replace with actual donation handling)
-            alert(`Thank you for your donation! ${fullName} 
-An Email will be sent to you shortly.`);
-            // Clear the form after submission
-            document.getElementById('donationForm').reset();
-        });
+//         document.getElementById('donationForm').addEventListener('submit', function (event) {
+//             const fullName = document.getElementById('fullName').value;
+//             console.log(fullName);
+//             event.preventDefault();
+//             // donation process (replace with actual donation handling)
+//             alert(`Thank you for your donation! ${fullName} 
+// An Email will be sent to you shortly.`);
+//             // Clear the form after submission
+//             document.getElementById('donationForm').reset();
+//         });
 
 
         const nav = document.querySelector('nav');
@@ -154,6 +185,11 @@ An Email will be sent to you shortly.`);
             nav.classList.remove('sticky');
             }
         });
+
+        
+
+
+        
     </script>
 </body>
 </html>
